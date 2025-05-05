@@ -90,13 +90,6 @@ Babe Coffee Shop Cashiering System is a comprehensive point-of-sale solution des
 - Git
 
 ### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/babe-coffee-shop.git
-   cd babe-coffee-shop
-   ```
-
 2. **Backend Setup**
    ```bash
    cd backend
