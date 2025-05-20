@@ -2,24 +2,6 @@
 
 A modern and feature-rich coffee shop management application with an intuitive user interface for efficient order processing, inventory management, and financial reporting.
 
-![Babe Coffee Shop](public/coffee-shop-banner.png)
-
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the Application](#running-the-application)
-- [API Documentation](#api-documentation)
-- [System Architecture](#system-architecture)
-- [Data Model](#data-model)
-- [User Guide](#user-guide)
-- [Development](#development)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 🔍 Overview
 
 Babe Coffee Shop Cashiering System is a comprehensive point-of-sale solution designed specifically for coffee shops and cafes. It streamlines the entire order process - from taking orders to generating receipts, while also providing inventory management and financial reporting capabilities.
@@ -126,29 +108,6 @@ python -m uvicorn main:app --reload
    - Username: admin
    - Password: admin123
 
-## 📚 API Documentation
-
-When the backend is running, you can access the interactive API documentation at:
-- Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
-
-### Key API Endpoints
-
-#### Authentication
-- `POST /token` - Login to obtain access token
-
-#### Users
-- `POST /users/` - Create a new user
-- `GET /users/me/` - Get current user information
-
-#### Products
-- `POST /products/` - Create a new product
-- `GET /products/` - List all products
-
-#### Orders
-- `POST /orders/` - Create a new order
-- `GET /orders/` - List user's orders
-
 ## 🏗️ System Architecture
 
 The application follows a modern client-server architecture:
@@ -167,17 +126,6 @@ The application follows a modern client-server architecture:
    - Relational database with SQLite (development)
    - Entity relationships for data integrity
 
-## 💾 Data Model
-
-The system uses the following core data entities:
-
-- **User**: Store user information and authentication details
-- **Product**: Store product information, pricing, and categories
-- **Order**: Track customer orders and their status
-- **OrderItem**: Individual items within an order
-- **Category**: Product categorization
-- **Inventory**: Track product stock levels
-
 ## 📖 User Guide
 
 ### Admin Dashboard
@@ -194,37 +142,3 @@ The system uses the following core data entities:
 - Browse menu and place orders
 - View order history
 - Track order status
-
-## 👩‍💻 Development
-
-### Project Structure
-- `/app` - Next.js application pages and components
-- `/components` - Reusable UI components
-- `/lib` - Utility functions and helpers
-- `/public` - Static assets
-- `/styles` - Global CSS and Tailwind configuration
-- `/backend` - FastAPI server and database models
-
-### Development Workflow
-1. Create a feature branch from main
-2. Implement and test your changes
-3. Submit a pull request for review
-
-### Code Style
-- Follow the established code style and conventions
-- Use TypeScript for type safety
-- Write unit tests for new features
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
